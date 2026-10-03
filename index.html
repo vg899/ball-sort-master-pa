@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Ball Sort Master</title>
+    <style>
+        :root {
+            --primary: #4F46E5;
+            --primary-dark: #3730A3;
+            --accent: #F59E0B;
+            --bg-page: #F8FAFC;
+            --bg-card: #FFFFFF;
+            --text-main: #1E293B;
+            --text-muted: #64748B;
+            --border: #E2E8F0;
+            --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-main);
+            line-height: 1.7;
+            padding: 24px 16px;
+        }
+
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            background-color: var(--bg-card);
+            border-radius: 16px;
+            border: 1px solid var(--border);
+            box-shadow: var(--card-shadow);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #312E81 0%, #4F46E5 50%, #6366F1 100%);
+            color: #FFFFFF;
+            padding: 40px 32px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 16px;
+        }
+
+        .meta-badges {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 16px;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: rgba(255, 255, 255, 0.18);
+            backdrop-filter: blur(8px);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+        }
+
+        .content {
+            padding: 40px 36px;
+        }
+
+        @media (max-width: 600px) {
+            .content {
+                padding: 24px 20px;
+            }
+            header {
+                padding: 32px 20px;
+            }
+            header h1 {
+                font-size: 1.75rem;
+            }
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            color: var(--primary-dark);
+            margin-top: 36px;
+            margin-bottom: 14px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #EEF2F6;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        h2:first-of-type {
+            margin-top: 0;
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            color: var(--text-main);
+            margin-top: 20px;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: var(--text-main);
+        }
+
+        ul {
+            margin-left: 24px;
+            margin-bottom: 16px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: var(--text-main);
+        }
+
+        .card {
+            background-color: #F8FAFC;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .card.highlight {
+            border-left: 4px solid var(--accent);
+            background-color: #FFFDF5;
+        }
+
+        .card.primary-callout {
+            border-left: 4px solid var(--primary);
+            background-color: #F5F7FF;
+        }
+
+        .third-party-list {
+            list-style: none;
+            margin-left: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 12px;
+            margin-top: 14px;
+        }
+
+        .third-party-item {
+            background: #FFFFFF;
+            border: 1px solid var(--border);
+            padding: 14px 16px;
+            border-radius: 10px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+        }
+
+        .third-party-item strong {
+            display: block;
+            color: var(--primary);
+            margin-bottom: 4px;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: underline;
+            word-break: break-all;
+        }
+
+        a:hover {
+            color: var(--primary-dark);
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, #EEF2FF 0%, #E0E7FF 100%);
+            border: 1px solid #C7D2FE;
+            border-radius: 12px;
+            padding: 24px;
+            margin-top: 30px;
+        }
+
+        .contact-box h3 {
+            margin-top: 0;
+            color: var(--primary-dark);
+        }
+
+        footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border);
+            background-color: #F1F5F9;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Privacy Policy</h1>
+        <div class="subtitle">Ball Sort Master</div>
+        <div class="meta-badges">
+            <span class="badge">App: Ball Sort Master</span>
+            <span class="badge">Package: com.harshvardhan.ballsortmaster</span>
+            <span class="badge">Developer: Harshvardhan Tiwari</span>
+            <span class="badge">Last Updated: October 2026</span>
+        </div>
+    </header>
+
+    <div class="content">
+
+        <h2>1. Introduction</h2>
+        <p>
+            Welcome to <strong>Ball Sort Master</strong> ("we", "our", or "us"), developed and published by independent developer <strong>Harshvardhan Tiwari</strong>. 
+            We respect your privacy and are committed to protecting the personal information you share with us.
+        </p>
+        <p>
+            This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you download, install, and play our mobile application <strong>Ball Sort Master</strong> (Package name: <code>com.harshvardhan.ballsortmaster</code>) available on Google Play.
+        </p>
+        <p>
+            By downloading, accessing, or playing the game, you agree to the terms described in this Privacy Policy. If you do not agree with the terms, please do not access or use the application.
+        </p>
+
+        <h2>2. Information We Collect</h2>
+        <p>
+            We collect only the minimum information necessary to provide you with a smooth, enjoyable gameplay experience, to serve relevant advertisements, to sync your progress safely, and to process legitimate contest or prize claims.
+        </p>
+
+        <h3>A. Information Collected Automatically</h3>
+        <ul>
+            <li><strong>Device & Usage Data:</strong> Device model, operating system version (Android), unique device identifiers, IP address, connection type, language settings, and general gameplay telemetry (levels completed, moves taken, time spent).</li>
+            <li><strong>Advertising Identifiers:</strong> Google Advertising ID (AAID) used by Google AdMob to serve personalized and non-personalized advertisements, track ad impressions, and prevent fraud.</li>
+            <li><strong>Crash Logs & Performance Data:</strong> Anonymous diagnostic information collected automatically via Firebase Analytics and Google Play Services to identify and fix technical glitches and application crashes.</li>
+        </ul>
+
+        <h3>B. Anonymous Game Progress Data (Firebase)</h3>
+        <p>
+            To allow you to continue your puzzle progress seamlessly across sessions and offline states, the app uses <strong>Firebase Anonymous Authentication</strong>. A randomized, unique User Identifier (UID) is generated. We associate your in-game coins, current level, solved puzzle count, and undo/hint inventory with this UID in the <strong>Firebase Realtime Database</strong>. This identifier contains no personally identifiable information (such as your real name, email, or telephone number).
+        </p>
+
+        <h3>C. Grand Prize Claim Information (Voluntary)</h3>
+        <div class="card highlight">
+            <strong>Contest & Grand Prize Claim Feature:</strong>
+            <p style="margin-top: 8px; margin-bottom: 0;">
+                Ball Sort Master features a special milestone reward for players who conquer all 1,000,000 puzzle levels. If you achieve this milestone and choose to claim the real-world grand prize, you will be prompted to submit a claim form.
+            </p>
+        </div>
+        <p>When you voluntarily submit a claim form, we collect the following details:</p>
+        <ul>
+            <li><strong>Full Name:</strong> To verify winner identity.</li>
+            <li><strong>Email Address:</strong> For official communication and verification confirmation.</li>
+            <li><strong>Mobile Phone Number:</strong> For delivery coordination and security verification.</li>
+            <li><strong>Full Postal Address & PIN / Zip Code:</strong> Solely for physical delivery and shipping of the prize.</li>
+            <li><strong>Cryptographic Verification Hash:</strong> A tamper-proof SHA-256 hash confirming that the level milestone was genuinely unlocked within the authentic app binary.</li>
+        </ul>
+        <p>
+            <em>Note: This information is strictly optional and is only collected if you reach the final level milestone and voluntarily choose to submit the claim form. It is never sold, rented, or shared with third-party advertisers.</em>
+        </p>
+
+        <h2>3. Third-Party Services and Advertising</h2>
+        <p>
+            The Application utilizes trusted third-party SDKs that may collect information used to identify your device in accordance with their respective privacy policies.
+        </p>
+
+        <ul class="third-party-list">
+            <li class="third-party-item">
+                <strong>Google AdMob</strong>
+                Displays banner, interstitial, and rewarded video ads. Collects Advertising ID, IP, and ad interaction metrics.<br>
+                <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">AdMob Privacy & Terms</a>
+            </li>
+            <li class="third-party-item">
+                <strong>Google Play Services</strong>
+                Provides core Android runtime services, licensing, and security integrity checks.<br>
+                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>
+            </li>
+            <li class="third-party-item">
+                <strong>Google Firebase</strong>
+                Used for Anonymous Authentication, Realtime Database (Level sync), and Analytics.<br>
+                <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy Policy</a>
+            </li>
+        </ul>
+
+        <h3>AdMob Ads & Opt-Out</h3>
+        <p>
+            Google AdMob delivers ads based on your general location and interests. You can opt out of personalized advertisements or reset your Google Advertising ID on your Android device at any time by going to:
+            <br>
+            <code>Settings &rarr; Google &rarr; Ads &rarr; Reset advertising ID</code> or <code>Delete advertising ID</code>.
+        </p>
+
+        <h2>4. How We Use Your Information</h2>
+        <p>The information we collect is utilized strictly for the following purposes:</p>
+        <ul>
+            <li>To operate, maintain, and enhance the Ball Sort Master game functionality.</li>
+            <li>To save, backup, and restore your game progress, levels, hints, and coin balance.</li>
+            <li>To verify legitimate gameplay and deliver the grand prize to verified level 1,000,000 winners.</li>
+            <li>To display appropriate banner, interstitial, and rewarded ads that keep the game free to play.</li>
+            <li>To monitor app performance, identify bugs, and improve user satisfaction.</li>
+            <li>To prevent fraud, cheating, and unauthorized exploitation of the game.</li>
+        </ul>
+
+        <h2>5. Data Security</h2>
+        <div class="card primary-callout">
+            <p style="margin: 0;">
+                We prioritize the security of your data. All network communications with Firebase and Google AdMob are encrypted in transit using industry-standard <strong>Transport Layer Security (TLS/HTTPS)</strong>. Firebase Realtime Database is safeguarded by strict server-side security rules that prevent unauthorized access and data tampering.
+            </p>
+        </div>
+        <p>
+            While we implement robust, commercially acceptable electronic security measures, please understand that no method of transmission over the Internet or electronic storage is 100% secure.
+        </p>
+
+        <h2>6. Children's Privacy (COPPA & GDPR Compliance)</h2>
+        <p>
+            <strong>Ball Sort Master</strong> is designed for general audiences and puzzle enthusiasts of all ages. We do not knowingly collect personal identifiable information from children under the age of 13 (or under 16 in the European Union).
+        </p>
+        <p>
+            If you are a parent or legal guardian and believe that your child has provided us with personal information (such as through a prize claim form) without your consent, please contact us immediately at <a href="mailto:thegondaminivlog1@gmail.com">thegondaminivlog1@gmail.com</a>. We will promptly delete such information from our records.
+        </p>
+
+        <h2>7. Your Data Rights and Data Deletion</h2>
+        <p>
+            Depending on your jurisdiction (such as GDPR in Europe or CCPA in California), you have rights regarding your personal information, including:
+        </p>
+        <ul>
+            <li><strong>Right to Access:</strong> The right to request copies of your stored data.</li>
+            <li><strong>Right to Rectification:</strong> The right to correct inaccurate or incomplete details.</li>
+            <li><strong>Right to Erasure (Deletion):</strong> The right to request the deletion of your personal data, progress, or prize claim records.</li>
+            <li><strong>Right to Withdraw Consent:</strong> The right to withdraw consent for data processing at any time.</li>
+        </ul>
+        <p>
+            To request the complete deletion of your game records, Firebase user UID, or submitted prize claim data, simply email us at <a href="mailto:thegondaminivlog1@gmail.com">thegondaminivlog1@gmail.com</a> with your request and we will process it within 30 days.
+        </p>
+
+        <h2>8. Changes to This Privacy Policy</h2>
+        <p>
+            We may update our Privacy Policy periodically to reflect new features, updated regulations, or legal requirements. Any modifications will be posted directly on this page with an updated "Last Updated" date. We advise you to review this page periodically for any changes.
+        </p>
+
+        <div class="contact-box">
+            <h3>9. Contact Us</h3>
+            <p>If you have any questions, suggestions, or concerns regarding this Privacy Policy or your data, please contact the developer directly:</p>
+            <p>
+                <strong>Developer Name:</strong> Harshvardhan Tiwari<br>
+                <strong>Application:</strong> Ball Sort Master<br>
+                <strong>Package Name:</strong> <code>com.harshvardhan.ballsortmaster</code><br>
+                <strong>Email:</strong> <a href="mailto:thegondaminivlog1@gmail.com">thegondaminivlog1@gmail.com</a>
+            </p>
+        </div>
+
+    </div>
+
+    <footer>
+        &copy; 2026 Harshvardhan Tiwari. All rights reserved. &bull; Ball Sort Master (com.harshvardhan.ballsortmaster)
+    </footer>
+</div>
+
+</body>
+</html>
